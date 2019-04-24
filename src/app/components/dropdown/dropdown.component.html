@@ -1,0 +1,26 @@
+
+<h3>There is a problem with the placeholder; Is only affecting the Multiselect. See below:</h3>
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()" novalidate>
+  <ul>
+    <li>
+      <ejs-multiselect
+        [dataSource]="dataSource"
+        [fields]="fieldMapping"
+        placeholder="Recipient(s)*"
+        floatLabelType="Auto"
+        formControlName="multiselectId"
+        delimiterChar=";"></ejs-multiselect>
+    </li>
+    <li>
+      <ejs-dropdownlist
+        [dataSource]="dataSource"
+        [fields]="fieldMapping"
+        placeholder="Recipient(s)*"
+        floatLabelType="Auto"
+        formControlName="dropdownId"></ejs-dropdownlist>
+    </li>
+    <li>
+      <button type="submit">Submit</button>
+    </li>
+  </ul>
+</form>

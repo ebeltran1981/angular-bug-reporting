@@ -1,0 +1,16 @@
+<h3>The tabs works fine in development mode, but when compiled for production the content is not rendered.</h3>
+
+<ejs-tab heightAdjustMode="Auto" cssClass="tab-container" [animation]="tabsAnimationSettings">
+  <e-tabitems>
+    <e-tabitem [header]="profileTabHeader">
+      <ng-template #content>
+        <app-content1 [content]="data"></app-content1>
+      </ng-template>
+    </e-tabitem>
+    <e-tabitem [header]="generalTabHeader">
+      <ng-template #content>
+        <app-content2 [content]="data"></app-content2>
+      </ng-template>
+    </e-tabitem>
+  </e-tabitems>
+</ejs-tab>
